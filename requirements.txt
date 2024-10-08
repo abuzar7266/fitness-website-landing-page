@@ -1,0 +1,93 @@
+Project Overview
+The goal is to build a fitness platform called Fitly with a focus on personalized workout plans, accessible across devices. The design should feature mobile responsiveness, smooth user interactions, and a seamless interface. The site will highlight various subscription plans, a testimonials section, and newsletter integration.
+
+Core Technologies
+Framework: Next.js
+Styling: Tailwind CSS
+State Management: React Context API / Redux (optional, depending on state complexity)
+Forms & Validation: React Hook Form, Yup (for validation)
+Animations & Transitions: Framer Motion (optional, for smooth animations)
+Image Optimization: Next.js next/image
+SEO & Accessibility: Next.js built-in SEO optimizations + Headless CMS (e.g., Sanity) for blog content
+Backend/Database: Firebase (for user authentication, workouts data, and subscriptions), Stripe API (for payment integration)
+Deployment: Vercel (Next.js optimized)
+Authentication: Firebase Auth or NextAuth.js (JWT-based)
+1. Header Section
+Requirements:
+Sticky Header: Navigation bar should stay on top when scrolling.
+Elements:
+Logo (Fitly)
+Menu items: Home, Trainers, Diet Plans, Blogs.
+Button: "Try Now" with a CTA style.
+Functionality:
+Mobile Menu: Implement a mobile-friendly burger menu for small screens.
+Hover Animations: On hover, menu items change background or color.
+Technologies:
+Tailwind CSS for styling.
+Framer Motion or CSS animations for hover effects.
+Responsive Design: Media queries for adjusting based on screen size.
+2. Hero Section
+Requirements:
+Main CTA (Call to Action):
+Text: “Access your Personalized Workout Plans on the go with Fitly.”
+Buttons:
+Try Now (Primary CTA)
+How it works (Secondary CTA with a play button icon)
+Hero Image: A fitness enthusiast holding a water bottle and gym bag.
+Functionality:
+Clickable CTAs: Buttons should link to appropriate sections (sign-up for "Try Now", and a demo video or feature explanation for "How it works").
+Background Image: Should scale correctly on all devices without losing focus.
+Technologies:
+Next.js Image Component for image optimization.
+Tailwind CSS for responsive layout.
+3. As Seen On Section
+Requirements:
+Display brand logos (Forbes, Men's Health, New York Times).
+Ensure these logos resize and align well on smaller screens.
+Technologies:
+Tailwind Grid/Flex for logo layout.
+Next.js Image Component for lazy loading and image optimization.
+4. Personalized Workout Plans Section
+Requirements:
+Cards layout showcasing different types of workout plans (e.g., Strength Training, General Wellness).
+Each card should have a hover effect to highlight the plan.
+Cards should be clickable and lead to specific workout plans.
+Technologies:
+Tailwind CSS for card designs.
+React Router/Next.js routing for linking each plan to its dedicated page.
+Framer Motion for hover effects.
+5. Membership Section
+Requirements:
+Three membership plans with CTA buttons (One Time Plan, One Month Plan, One Year Plan).
+"Know More" button should open more details or lead to a pricing page.
+Technologies:
+Tailwind CSS Flex/Grid for layout.
+Framer Motion for card animation (on hover).
+Functionalities:
+Dynamic pricing: Membership plan prices fetched from backend (e.g., Firebase/Headless CMS).
+6. Testimonials Section
+Requirements:
+Display user testimonials in a card format.
+Include image, name, and short testimonial text.
+Technologies:
+Tailwind CSS for responsive grid layout.
+Framer Motion/Swiper.js (optional) for a sliding carousel of testimonials.
+7. Newsletter Section
+Requirements:
+Capture user emails for newsletters with validation.
+"Join Newsletter" button should be functional and store email data (Firebase).
+Technologies:
+React Hook Form with Yup for form validation.
+Firebase or any third-party email service like Mailchimp integration.
+8. Footer Section
+Requirements:
+Links to core pages (Home, Trainers, Diet Plans, Blogs, Legal links).
+Social media icons for linking to platforms like Instagram, Facebook, etc.
+Technologies:
+Tailwind CSS for the responsive grid layout.
+Additional Notes:
+Responsiveness: Ensure all sections are fully responsive across mobile, tablet, and desktop.
+Performance Optimizations: Leverage Next.js optimizations for faster load times (SSR/ISR), Tailwind’s purge for reducing CSS size.
+Cross-browser compatibility: Ensure the design works seamlessly across Chrome, Firefox, Safari, and Edge.
+Testing: Use Jest with React Testing Library for unit tests and Cypress for end-to-end testing.
+Analytics: Integrate Google Analytics for tracking user behavior.
